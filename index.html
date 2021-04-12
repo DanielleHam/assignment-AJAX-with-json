@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Assagnment 1</title>
 </head>
 <body>
-    <button id="rbtn">Random dog</button>
-    <br>
-    <div id="randDog">
-        <img src="" alt="">
+    <div class="container">
+        <button id="rbtn">Random dogphoto</button>
+        <br>
+        <div id="randDog">
+            <img src="" alt="">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <label for="breeds">Choose a breed to se a random photo of that breed: </label>
+        <br>
+        <br>
+        <select name="breeds" id="breed-select">
+            <option value="akita">Akita</option>
+            <option value="labrador">Labrador</option>
+            <option value="boxer">Boxer</option>
+            <option value="pomeranian">Pomeranian</option>
+            <option value="retriever-golden">Golden Retriever</option>
+            <option value="rottweiler">Rorrweiler</option>
+        </select>
+        <button id="breedBtn">Fetch a photo of a Dog breed!</button>
+        <br>
+        <div id="breed-dogs">
+            <img src="" alt="">
+        </div>
     </div>
-    <br>
-    <label for="breeds">Choose a bread to se a random photo: </label>
-    <select name="breeds" id="breed-select">
-        <option value="akita">Akita</option>
-        <option value="labrador">Labrador</option>
-        <option value="boxer">Boxer</option>
-        <option value="pomeranian">Pomeranian</option>
-        <option value="retriever-golden">Golden Retriever</option>
-        <option value="rottweiler">Rorrweiler</option>
-    </select>
-    <button id="breedBtn">Fetch a Dog breed!</button>
-    <br>
-    <div id="breed-dogs">
-        <img src="" alt="">
-    </div>
-
     <script src="js/main.js"></script>
 </body>
 </html>
