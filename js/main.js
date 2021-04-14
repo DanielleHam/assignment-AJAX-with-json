@@ -22,9 +22,7 @@ async function randDog() {
     };
 };
 
-$('#rbtn').on('click', () => {
-    randDog();
-});
+$('#rbtn').on('click', randDog);
 
 async function breedDog() {
     try {
@@ -46,7 +44,5 @@ async function breedDog() {
     };
 }
 
-$('#breedBtn').on('click', () => {
-    breedDog();
-})
+$('#breedBtn').on('click', breedDog);
 
